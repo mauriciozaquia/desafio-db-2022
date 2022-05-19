@@ -2,6 +2,7 @@ package Task;
 
 import Pages.PaginaFormulario;
 import Pages.PaginaHome;
+import Test.Modelo.Usuario;
 import org.openqa.selenium.WebDriver;
 
 public class TaskFormulario {
@@ -48,6 +49,17 @@ public class TaskFormulario {
 
     public void cadastrarUsuario(){
         paginaFormulario.getBotaoCriar().click();
+    }
+
+    public void preencherCampos(Usuario usuario){
+        paginaFormulario.getInputNome().sendKeys(usuario.getNome());
+        paginaFormulario.getInputUltimoNome().sendKeys(usuario.getUltimoNome());
+        paginaFormulario.getInputEmail().sendKeys(usuario.getEmail());
+        paginaFormulario.getInputEndereco().sendKeys(usuario.getEndereco());
+        paginaFormulario.getInputUniversidade().sendKeys(usuario.getUniversidade());
+        paginaFormulario.getInputProfissao().sendKeys(usuario.getProfissao());
+        paginaFormulario.getInputGenero().sendKeys(usuario.getGenero());
+        paginaFormulario.getInputIdade().sendKeys(Integer.toString(usuario.getIdade()));
     }
 
 }
