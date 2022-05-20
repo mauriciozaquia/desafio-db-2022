@@ -1,4 +1,4 @@
-package Support;
+package Model.Support;
 
 public enum DriverType {
 

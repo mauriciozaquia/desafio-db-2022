@@ -1,23 +1,23 @@
 package Task;
 
-import Pages.PaginaHome;
+import Pages.PageHome;
 import org.openqa.selenium.WebDriver;
 
 public class TaskHome {
 
     private static WebDriver driver;
-    private static PaginaHome paginaHome;
+    private static PageHome pageHome;
 
     public TaskHome(WebDriver driver) {
         this.driver = driver;
-        paginaHome = new PaginaHome(this.driver);
+        pageHome = new PageHome(this.driver);
     }
 
     public void selecionarOpcaoListaFormulario(){
-        paginaHome.getListaFormulario().click();
+        pageHome.getListaFormulario().click();
     }
 
     public void selecionarCriarUsuarios() {
-        paginaHome.getListaCriarUsuarios().click();
+        pageHome.getListaCriarUsuarios().click();
     }
 }

@@ -1,4 +1,4 @@
-package Support.Report;
+package Model.Support.Report;
 
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -17,25 +17,25 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 
-public class CapturaDeTela {
+public class Printscreen {
 
-    private static final String CAMINHO_CAPTURA_DE_TELA = GeradorRelatorio.CAMINHO_RELATORIO +
+    private static final String CAMINHO_CAPTURA_DE_TELA = ReportGenerator.CAMINHO_RELATORIO +
             File.separator + "CapturaDeTela";
 
     public static MediaEntityModelProvider capture(WebDriver driver) {
         try {
-            CriarPasta.criaPastaRelatorio(CAMINHO_CAPTURA_DE_TELA);
+            CreateFolder.criaPastaRelatorio(CAMINHO_CAPTURA_DE_TELA);
             File captura = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             String caminhoDaCaptura = CAMINHO_CAPTURA_DE_TELA +
                     File.separator +
                     "Imagem_ " +
-                    DataTempo.pegaDataNoFormatoDaCapturaDeTela() +
+                    DateTimeFormat.pegaDataNoFormatoDaCapturaDeTela() +
                     ".png";
             FileUtils.copyFile(captura, new File(caminhoDaCaptura));
             return MediaEntityBuilder.createScreenCaptureFromPath(caminhoDaCaptura).build();
         } catch (IOException e) {
             String mensagem = "Ocorreu um erro na captura de tela!";
-            Relatorio.log(Status.WARNING, mensagem);
+            Report.log(Status.WARNING, mensagem);
         }
         return null;
     }
@@ -51,7 +51,7 @@ public class CapturaDeTela {
             return MediaEntityBuilder.createScreenCaptureFromBase64String(base64imagem).build();
         } catch (ScreenshotException | IOException e) {
             String mensagem = "Ocorreu um erro na captura de tela!";
-            Relatorio.log(Status.WARNING, mensagem);
+            Report.log(Status.WARNING, mensagem);
         }
         return null;
     }

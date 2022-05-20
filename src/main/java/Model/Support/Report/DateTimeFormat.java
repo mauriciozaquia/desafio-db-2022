@@ -1,11 +1,11 @@
-package Support.Report;
+package Model.Support.Report;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-public class DataTempo {
+public class DateTimeFormat {
 
     public static String pegaDataNoFormatoDoRelatorio(){
         SimpleDateFormat formatoData = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss");

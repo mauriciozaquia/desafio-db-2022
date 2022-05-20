@@ -1,18 +1,18 @@
 package Pages;
 
-import Support.Esperas;
+import Model.Support.Waits;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class PaginaIndex {
+public class PageIndex {
 
     private WebDriver driver;
-    private Esperas wait;
+    private Waits wait;
 
-    public PaginaIndex(WebDriver driver) {
+    public PageIndex(WebDriver driver) {
         this.driver = driver;
-        wait = new Esperas(driver);
+        wait = new Waits(driver);
     }
 
     public WebElement getButtonComecarAutomacao() {

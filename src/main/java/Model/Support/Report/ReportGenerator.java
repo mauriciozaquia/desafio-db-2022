@@ -1,4 +1,4 @@
-package Support.Report;
+package Model.Support.Report;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 
-public class GeradorRelatorio {
+public class ReportGenerator {
 
     public static WebDriver driver;
-    public static final String CAMINHO_RELATORIO = System.getProperty("user.dir") + File.separator + "Relatorio" + File.separator + "Relatorio " + DataTempo.pegaDataNoFormatoDoRelatorio();
+    public static final String CAMINHO_RELATORIO = System.getProperty("user.dir") + File.separator + "Relatorio" + File.separator + "Relatorio " + DateTimeFormat.pegaDataNoFormatoDoRelatorio();
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extentReports;
 
@@ -22,8 +22,8 @@ public class GeradorRelatorio {
     }
 
     public static void configReportExtent() {
-        CriarPasta.criaPastaRelatorio(CAMINHO_RELATORIO);
-        htmlReporter = new ExtentHtmlReporter(CAMINHO_RELATORIO + File.separator + "MeuRelatorio_" + DataTempo.pegaDataNoFormatoDoRelatorio() + ".html");
+        CreateFolder.criaPastaRelatorio(CAMINHO_RELATORIO);
+        htmlReporter = new ExtentHtmlReporter(CAMINHO_RELATORIO + File.separator + "MeuRelatorio_" + DateTimeFormat.pegaDataNoFormatoDoRelatorio() + ".html");
         htmlReporter.config().setDocumentTitle("Relatorio de Execucao da Automacao");
         htmlReporter.config().setReportName("Relatório de Execução dos Testes");
         htmlReporter.config().setTheme(Theme.DARK);
