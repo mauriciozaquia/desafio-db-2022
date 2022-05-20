@@ -1,4 +1,4 @@
-package Model.Support.Report;
+package model.support.report;
 
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;

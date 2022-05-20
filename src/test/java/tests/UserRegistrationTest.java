@@ -1,14 +1,14 @@
-package Test;
+package tests;
 
-import Model.Support.Report.Printscreen;
-import Model.Support.Report.Report;
-import Model.Support.Report.ReportType;
-import Model.Support.TestBase;
-import Task.TaskFormRegistration;
-import Task.TaskHome;
-import Task.TaskIndex;
-import Task.ValidationFormRegistration;
-import Model.User;
+import model.support.report.Printscreen;
+import model.support.report.Report;
+import model.support.report.ReportType;
+import model.support.TestBase;
+import tasks.TaskFormRegistration;
+import tasks.TaskHome;
+import tasks.TaskIndex;
+import tasks.ValidationFormRegistration;
+import model.User;
 import com.aventstack.extentreports.Status;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

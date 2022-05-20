@@ -1,6 +1,6 @@
-package Task;
+package tasks;
 
-import Pages.PageIndex;
+import pages.PageIndex;
 import org.openqa.selenium.WebDriver;
 
 public class TaskIndex {

@@ -1,6 +1,6 @@
-package Model.Support;
+package model.support;
 
-import Model.Support.Report.Report;
+import model.support.report.Report;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;

@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Model.Support.Waits;
+import utilities.Waits;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

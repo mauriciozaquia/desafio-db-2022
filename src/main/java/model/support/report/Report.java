@@ -1,4 +1,4 @@
-package Model.Support.Report;
+package model.support.report;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
