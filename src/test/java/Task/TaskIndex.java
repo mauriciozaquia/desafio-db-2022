@@ -1,20 +1,20 @@
 package Task;
 
-import Pages.PaginaIndex;
+import Pages.PageIndex;
 import org.openqa.selenium.WebDriver;
 
 public class TaskIndex {
 
     private static WebDriver driver;
-    private static PaginaIndex paginaIndex;
+    private static PageIndex pageIndex;
 
     public TaskIndex(WebDriver driver) {
         this.driver = driver;
-        paginaIndex = new PaginaIndex(this.driver);
+        pageIndex = new PageIndex(this.driver);
     }
 
     public void selecionarComecarAutomacaoWeb(){
-        paginaIndex.getButtonComecarAutomacao().click();
+        pageIndex.getButtonComecarAutomacao().click();
     }
 
 }

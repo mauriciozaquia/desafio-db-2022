@@ -1,6 +1,6 @@
-package Test.Modelo;
+package Model;
 
-public class Usuario {
+public class User {
 
     private String nome;
     private String ultimoNome;

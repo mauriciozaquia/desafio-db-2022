@@ -1,6 +1,6 @@
-package Support;
+package Model.Support;
 
-import Support.Report.Relatorio;
+import Model.Support.Report.Report;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +24,7 @@ public class TestBase extends DriverManager {
     @AfterEach
     public void closeDriver() {
         quitDriver();
-        Relatorio.fecha();
+        Report.fecha();
     }
 
 }
