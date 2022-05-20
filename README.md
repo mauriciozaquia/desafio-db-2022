@@ -18,9 +18,14 @@ Além disto é bom ter uma IDE Java para trabalhar com o código como por exempl
 ### EXECUÇÃO
 
 * Abra o projeto "desafio-db-2022"
-* Navegar até o pacote src/test/java/Test/
+* Navegar até o pacote src/test/java/tests/
 * Na classe *UserRegistrationTest* clicar com o botão direito
 * Clicar no menu "Run UserRegistrationTest
+
+### GERAÇÃO DE RELATÓRIO
+
+* Apos executar os testes, os relatórios serão gerados automaticamente na pasta Relatorio na raiz do projeto.
+
 
 ### CENÁRIOS DE TESTE
 

@@ -1,4 +1,4 @@
-package Model.Support.Report;
+package model.support.report;
 
 public enum ReportType {
     SINGLE,

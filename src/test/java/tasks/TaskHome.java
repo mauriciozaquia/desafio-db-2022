@@ -1,6 +1,6 @@
-package Task;
+package tasks;
 
-import Pages.PageHome;
+import pages.PageHome;
 import org.openqa.selenium.WebDriver;
 
 public class TaskHome {

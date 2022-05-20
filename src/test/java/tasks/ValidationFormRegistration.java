@@ -1,9 +1,9 @@
-package Task;
+package tasks;
 
-import Pages.PageFormRegistration;
-import Pages.PageUsers;
-import Model.Support.Report.Printscreen;
-import Model.Support.Report.Report;
+import pages.PageFormRegistration;
+import pages.PageUsers;
+import model.support.report.Printscreen;
+import model.support.report.Report;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
 
